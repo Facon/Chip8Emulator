@@ -588,7 +588,7 @@ void instruction_execute (SDL_Event *Events)
 			r.x = (V[x]*SCALE);
 			
 			for (yline = 0; (yline < n); yline++)
-				for(xpix = 0; (xpix < 8); i++)
+				for(xpix = 0; (xpix < 8); xpix++)
 				{SDL_FillRect(scr, &r, (Display[V[x]+xpix][V[y]+xpix] == 1) ? 0xFF : 0x0);}
 			//SDL_FillRect(scr, &r, (Display[V[x]][V[y]] == 1) ? 0xFF : 0x0);
 			SDL_UpdateRect(scr, r.x, r.y, r.w*8, r.h*n);
